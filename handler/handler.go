@@ -27,13 +27,25 @@ func (h *HandlerInstance)RegisterUser(w http.ResponseWriter, r *http.Request){
 
 	reponseData := map[string]interface{}{
 		// "message":"user Registed"
-	}
+	}	
 	
 	reponseData["message"] = "user Registed"
 	With200(w, reponseData)
 	return
 }
 
+
+
+func Login(w http.ResponseWriter, r *http.Request){
+
+
+	reponseData := map[string]interface{}{
+		// "message":"user Registed"
+	}	
+
+
+	With200(w, reponseData)
+}
 
 
 
@@ -45,7 +57,6 @@ func (h *HandlerInstance)RegisterUser(w http.ResponseWriter, r *http.Request){
 func With200(w http.ResponseWriter, data interface{}) {
 	dataB, err := json.Marshal(data)
 	if err != nil {
-
 		w.WriteHeader(422)
 		fmt.Fprintf(w, "Invalid Data")
 		return
