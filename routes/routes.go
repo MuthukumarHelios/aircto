@@ -1,21 +1,20 @@
 package routes
 
 import (
-  "github.com/gorilla/mux"
-  "aircto/handler"
+	"aircto/handler"
+
+	"github.com/gorilla/mux"
 )
 
+func MainRoutes() *mux.Router {
 
-
-func MainRoutes()*mux.Router{
-	
- 	h := &handler.HandlerInstance{}
+	h := &handler.HandlerInstance{}
 
 	r := mux.NewRouter()
-	
-	r.HandleFunc("/api/user/",h.RegisterUser).Methods("POST")	
 
-
+	r.HandleFunc("/api/user/", h.RegisterUser).Methods("POST")
+	r.HandleFunc("/api/user/login/", h.Login).Methods("POST")
+	r.HandleFunc("/api/user/issue/", h.CreateIssue).Methods("POST")
 
 	return r
 }

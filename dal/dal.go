@@ -21,7 +21,11 @@ func(d *Dal) InsertUser(userData models.User) error{
 
 	 return col.Insert(userData)
 }
+
 func(d *Dal)LoginUser(userData models.User) (u models.User){
+
+//    u.
+
 
 	return 
 }
