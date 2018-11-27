@@ -10,10 +10,8 @@ Login Part
 localhost:3000/api/user/login/ Method POST
 @payload
 {
-
 	"name":"muthu",
-	"email":"xy@gmail.com"
-}
+	"email":"xy@gmail.com"}
 
 Verfication
 
