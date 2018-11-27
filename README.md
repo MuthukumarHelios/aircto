@@ -13,9 +13,10 @@ localhost:3000/api/user/login/ Method POST
 {
 	"name":"muthu",
 	"email":"xy@gmail.com"}
----------------
 
---------
+-----------------------
+
+------------------------
 Verfication
 
 localhost:3000/api/user/issue/  -->Method POST
@@ -24,5 +25,6 @@ localhost:3000/api/user/issue/  -->Method POST
 	"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ik11dGh1In0.c5SDVsnjHXUof2Ha4J88xVXJ5GBV6MlnAJVnP0q0m9A",
 	"userName":"Muthu"
 }
-------------
+
+
 
